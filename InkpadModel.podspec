@@ -75,7 +75,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, svn and HTTP.
   #
 
-  # s.source       = { :git => "https://github.com/mobfarm/InkpadModel", :tag => "0.0.5" }
+  s.source       = { :git => "https://github.com/mobfarm/InkpadModel.git", :tag => "0.0.5" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
