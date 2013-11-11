@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95BE71CC182BF94400C8F970 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BE71CB182BF94400C8F970 /* Foundation.framework */; };
+		95BE71CE182BF94400C8F970 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BE71CD182BF94400C8F970 /* CoreGraphics.framework */; };
+		95BE71D0182BF94400C8F970 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BE71CF182BF94400C8F970 /* UIKit.framework */; };
+		95BE71D6182BF94400C8F970 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95BE71D4182BF94400C8F970 /* InfoPlist.strings */; };
+		95BE71D8182BF94400C8F970 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE71D7182BF94400C8F970 /* main.m */; };
+		95BE71DC182BF94400C8F970 /* MTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE71DB182BF94400C8F970 /* MTAppDelegate.m */; };
+		95BE71DF182BF94400C8F970 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95BE71DD182BF94400C8F970 /* Main_iPhone.storyboard */; };
+		95BE71E2182BF94400C8F970 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95BE71E0182BF94400C8F970 /* Main_iPad.storyboard */; };
+		95BE71E5182BF94400C8F970 /* MTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE71E4182BF94400C8F970 /* MTViewController.m */; };
+		95BE71E7182BF94400C8F970 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95BE71E6182BF94400C8F970 /* Images.xcassets */; };
+		95BE71EE182BF94400C8F970 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BE71ED182BF94400C8F970 /* XCTest.framework */; };
+		95BE71EF182BF94400C8F970 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BE71CB182BF94400C8F970 /* Foundation.framework */; };
+		95BE71F0182BF94400C8F970 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BE71CF182BF94400C8F970 /* UIKit.framework */; };
+		95BE71F8182BF94400C8F970 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95BE71F6182BF94400C8F970 /* InfoPlist.strings */; };
+		95BE71FA182BF94400C8F970 /* InkpadModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE71F9182BF94400C8F970 /* InkpadModelTests.m */; };
+		95BE72A2182BFC0300C8F970 /* MTSubtractView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE72A1182BFC0300C8F970 /* MTSubtractView.m */; };
+		95BE737D182BFD6E00C8F970 /* bezier-utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BE72BA182BFD6E00C8F970 /* bezier-utils.cpp */; };
+		95BE737E182BFD6E00C8F970 /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BE72C0182BFD6E00C8F970 /* matrix.cpp */; };
+		95BE737F182BFD6E00C8F970 /* point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BE72C2182BFD6E00C8F970 /* point.cpp */; };
+		95BE7380182BFD6E00C8F970 /* rotate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BE72C4182BFD6E00C8F970 /* rotate.cpp */; };
+		95BE7381182BFD6E00C8F970 /* transforms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BE72C7182BFD6E00C8F970 /* transforms.cpp */; };
+		95BE73A5182BFD6E00C8F970 /* AVL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BE72F0182BFD6E00C8F970 /* AVL.cpp */; };
+		95BE73A6182BFD6E00C8F970 /* DblLinked.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BE72F2182BFD6E00C8F970 /* DblLinked.cpp */; };
+		95BE73A7182BFD6E00C8F970 /* Path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BE72F6182BFD6E00C8F970 /* Path.cpp */; };
+		95BE73A9182BFD6E00C8F970 /* Shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BE72F9182BFD6E00C8F970 /* Shape.cpp */; };
+		95BE73AA182BFD6E00C8F970 /* ShapeMisc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BE72FB182BFD6E00C8F970 /* ShapeMisc.cpp */; };
+		95BE73AB182BFD6E00C8F970 /* ShapeSweep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BE72FC182BFD6E00C8F970 /* ShapeSweep.cpp */; };
+		95BE73AC182BFD6E00C8F970 /* ShapeSweepUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BE72FD182BFD6E00C8F970 /* ShapeSweepUtils.cpp */; };
+		95BE73AD182BFD6E00C8F970 /* WDAbstractPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE7301182BFD6E00C8F970 /* WDAbstractPath.m */; };
+		95BE73AF182BFD6E00C8F970 /* WDBezierNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE7305182BFD6E00C8F970 /* WDBezierNode.m */; };
+		95BE73B0182BFD6E00C8F970 /* WDBezierSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE7307182BFD6E00C8F970 /* WDBezierSegment.m */; };
+		95BE73B2182BFD6E00C8F970 /* WDCompoundPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE730B182BFD6E00C8F970 /* WDCompoundPath.m */; };
+		95BE73B3182BFD6E00C8F970 /* WDCurveFit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95BE730D182BFD6E00C8F970 /* WDCurveFit.mm */; };
+		95BE73B5182BFD6E00C8F970 /* WDElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE7312182BFD6E00C8F970 /* WDElement.m */; };
+		95BE73B6182BFD6E00C8F970 /* WDFillTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE7314182BFD6E00C8F970 /* WDFillTransform.m */; };
+		95BE73B9182BFD6E00C8F970 /* WDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE731A182BFD6E00C8F970 /* WDGroup.m */; };
+		95BE73BC182BFD6E00C8F970 /* WDInspectableProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE7320182BFD6E00C8F970 /* WDInspectableProperties.m */; };
+		95BE73BE182BFD6E00C8F970 /* WDPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE7324182BFD6E00C8F970 /* WDPath.m */; };
+		95BE73BF182BFD6E00C8F970 /* WDPathfinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95BE7326182BFD6E00C8F970 /* WDPathfinder.mm */; };
+		95BE73C2182BFD6E00C8F970 /* WDShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE732D182BFD6E00C8F970 /* WDShadow.m */; };
+		95BE73E3182BFD6E00C8F970 /* WDUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE7373182BFD6E00C8F970 /* WDUtilities.m */; };
+		95BE74CD182C006D00C8F970 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BE74CC182C006D00C8F970 /* QuartzCore.framework */; };
+		95BE74D7182C00BA00C8F970 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BE74D6182C00BA00C8F970 /* libz.dylib */; };
+		95BE74E1182C060800C8F970 /* WDPickResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE7329182BFD6E00C8F970 /* WDPickResult.m */; };
+		95BE74E2182C067000C8F970 /* WDStylable.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE7331182BFD6E00C8F970 /* WDStylable.m */; };
+		95BE74E3182C067400C8F970 /* WDStrokeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE732F182BFD6E00C8F970 /* WDStrokeStyle.m */; };
+		95BE74E4182C067E00C8F970 /* WDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE7309182BFD6E00C8F970 /* WDColor.m */; };
+		95BE74E5182C068800C8F970 /* WDGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE7316182BFD6E00C8F970 /* WDGradient.m */; };
+		95BE74E6182C069500C8F970 /* WDGradientStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE7318182BFD6E00C8F970 /* WDGradientStop.m */; };
+		95BE74E7182C08A300C8F970 /* PathConversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BE72F8182BFD6E00C8F970 /* PathConversion.cpp */; };
+		95BE74E8182C09AA00C8F970 /* WDGLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE7371182BFD6E00C8F970 /* WDGLUtilities.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95BE71F1182BF94400C8F970 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95BE71C0182BF94400C8F970 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95BE71C7182BF94400C8F970;
+			remoteInfo = InkpadModel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		95BE71C8182BF94400C8F970 /* InkpadModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InkpadModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95BE71CB182BF94400C8F970 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		95BE71CD182BF94400C8F970 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		95BE71CF182BF94400C8F970 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		95BE71D3182BF94400C8F970 /* InkpadModel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InkpadModel-Info.plist"; sourceTree = "<group>"; };
+		95BE71D5182BF94400C8F970 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		95BE71D7182BF94400C8F970 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95BE71D9182BF94400C8F970 /* InkpadModel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InkpadModel-Prefix.pch"; sourceTree = "<group>"; };
+		95BE71DA182BF94400C8F970 /* MTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTAppDelegate.h; sourceTree = "<group>"; };
+		95BE71DB182BF94400C8F970 /* MTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTAppDelegate.m; sourceTree = "<group>"; };
+		95BE71DE182BF94400C8F970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		95BE71E1182BF94400C8F970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		95BE71E3182BF94400C8F970 /* MTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTViewController.h; sourceTree = "<group>"; };
+		95BE71E4182BF94400C8F970 /* MTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTViewController.m; sourceTree = "<group>"; };
+		95BE71E6182BF94400C8F970 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		95BE71EC182BF94400C8F970 /* InkpadModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InkpadModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95BE71ED182BF94400C8F970 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		95BE71F5182BF94400C8F970 /* InkpadModelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InkpadModelTests-Info.plist"; sourceTree = "<group>"; };
+		95BE71F7182BF94400C8F970 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		95BE71F9182BF94400C8F970 /* InkpadModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InkpadModelTests.m; sourceTree = "<group>"; };
+		95BE72A0182BFC0300C8F970 /* MTSubtractView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSubtractView.h; sourceTree = "<group>"; };
+		95BE72A1182BFC0300C8F970 /* MTSubtractView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSubtractView.m; sourceTree = "<group>"; };
+		95BE72BA182BFD6E00C8F970 /* bezier-utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "bezier-utils.cpp"; sourceTree = "<group>"; };
+		95BE72BB182BFD6E00C8F970 /* bezier-utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "bezier-utils.h"; sourceTree = "<group>"; };
+		95BE72BC182BFD6E00C8F970 /* coord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coord.h; sourceTree = "<group>"; };
+		95BE72BD182BFD6E00C8F970 /* isnan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = isnan.h; sourceTree = "<group>"; };
+		95BE72BE182BFD6E00C8F970 /* macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macros.h; sourceTree = "<group>"; };
+		95BE72BF182BFD6E00C8F970 /* math-utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "math-utils.h"; sourceTree = "<group>"; };
+		95BE72C0182BFD6E00C8F970 /* matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matrix.cpp; sourceTree = "<group>"; };
+		95BE72C1182BFD6E00C8F970 /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
+		95BE72C2182BFD6E00C8F970 /* point.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = point.cpp; sourceTree = "<group>"; };
+		95BE72C3182BFD6E00C8F970 /* point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = point.h; sourceTree = "<group>"; };
+		95BE72C4182BFD6E00C8F970 /* rotate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rotate.cpp; sourceTree = "<group>"; };
+		95BE72C5182BFD6E00C8F970 /* rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rotate.h; sourceTree = "<group>"; };
+		95BE72C6182BFD6E00C8F970 /* scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale.h; sourceTree = "<group>"; };
+		95BE72C7182BFD6E00C8F970 /* transforms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = transforms.cpp; sourceTree = "<group>"; };
+		95BE72C8182BFD6E00C8F970 /* transforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transforms.h; sourceTree = "<group>"; };
+		95BE72C9182BFD6E00C8F970 /* translate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = translate.h; sourceTree = "<group>"; };
+		95BE72F0182BFD6E00C8F970 /* AVL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AVL.cpp; sourceTree = "<group>"; };
+		95BE72F1182BFD6E00C8F970 /* AVL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVL.h; sourceTree = "<group>"; };
+		95BE72F2182BFD6E00C8F970 /* DblLinked.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DblLinked.cpp; sourceTree = "<group>"; };
+		95BE72F3182BFD6E00C8F970 /* DblLinked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DblLinked.h; sourceTree = "<group>"; };
+		95BE72F4182BFD6E00C8F970 /* LivarotDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LivarotDefs.h; sourceTree = "<group>"; };
+		95BE72F5182BFD6E00C8F970 /* MyMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMath.h; sourceTree = "<group>"; };
+		95BE72F6182BFD6E00C8F970 /* Path.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Path.cpp; sourceTree = "<group>"; };
+		95BE72F7182BFD6E00C8F970 /* Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Path.h; sourceTree = "<group>"; };
+		95BE72F8182BFD6E00C8F970 /* PathConversion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PathConversion.cpp; sourceTree = "<group>"; };
+		95BE72F9182BFD6E00C8F970 /* Shape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shape.cpp; sourceTree = "<group>"; };
+		95BE72FA182BFD6E00C8F970 /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		95BE72FB182BFD6E00C8F970 /* ShapeMisc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShapeMisc.cpp; sourceTree = "<group>"; };
+		95BE72FC182BFD6E00C8F970 /* ShapeSweep.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShapeSweep.cpp; sourceTree = "<group>"; };
+		95BE72FD182BFD6E00C8F970 /* ShapeSweepUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShapeSweepUtils.cpp; sourceTree = "<group>"; };
+		95BE72FE182BFD6E00C8F970 /* ShapeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeUtils.h; sourceTree = "<group>"; };
+		95BE7300182BFD6E00C8F970 /* WDAbstractPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDAbstractPath.h; sourceTree = "<group>"; };
+		95BE7301182BFD6E00C8F970 /* WDAbstractPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDAbstractPath.m; sourceTree = "<group>"; };
+		95BE7302182BFD6E00C8F970 /* WDArrowhead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDArrowhead.h; sourceTree = "<group>"; };
+		95BE7304182BFD6E00C8F970 /* WDBezierNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDBezierNode.h; sourceTree = "<group>"; };
+		95BE7305182BFD6E00C8F970 /* WDBezierNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDBezierNode.m; sourceTree = "<group>"; };
+		95BE7306182BFD6E00C8F970 /* WDBezierSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDBezierSegment.h; sourceTree = "<group>"; };
+		95BE7307182BFD6E00C8F970 /* WDBezierSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDBezierSegment.m; sourceTree = "<group>"; };
+		95BE7308182BFD6E00C8F970 /* WDColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDColor.h; sourceTree = "<group>"; };
+		95BE7309182BFD6E00C8F970 /* WDColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDColor.m; sourceTree = "<group>"; };
+		95BE730A182BFD6E00C8F970 /* WDCompoundPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDCompoundPath.h; sourceTree = "<group>"; };
+		95BE730B182BFD6E00C8F970 /* WDCompoundPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDCompoundPath.m; sourceTree = "<group>"; };
+		95BE730C182BFD6E00C8F970 /* WDCurveFit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDCurveFit.h; sourceTree = "<group>"; };
+		95BE730D182BFD6E00C8F970 /* WDCurveFit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WDCurveFit.mm; sourceTree = "<group>"; };
+		95BE730E182BFD6E00C8F970 /* WDDocumentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDocumentProtocol.h; sourceTree = "<group>"; };
+		95BE730F182BFD6E00C8F970 /* WDDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDrawing.h; sourceTree = "<group>"; };
+		95BE7311182BFD6E00C8F970 /* WDElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDElement.h; sourceTree = "<group>"; };
+		95BE7312182BFD6E00C8F970 /* WDElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDElement.m; sourceTree = "<group>"; };
+		95BE7313182BFD6E00C8F970 /* WDFillTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDFillTransform.h; sourceTree = "<group>"; };
+		95BE7314182BFD6E00C8F970 /* WDFillTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDFillTransform.m; sourceTree = "<group>"; };
+		95BE7315182BFD6E00C8F970 /* WDGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDGradient.h; sourceTree = "<group>"; };
+		95BE7316182BFD6E00C8F970 /* WDGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDGradient.m; sourceTree = "<group>"; };
+		95BE7317182BFD6E00C8F970 /* WDGradientStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDGradientStop.h; sourceTree = "<group>"; };
+		95BE7318182BFD6E00C8F970 /* WDGradientStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDGradientStop.m; sourceTree = "<group>"; };
+		95BE7319182BFD6E00C8F970 /* WDGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDGroup.h; sourceTree = "<group>"; };
+		95BE731A182BFD6E00C8F970 /* WDGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDGroup.m; sourceTree = "<group>"; };
+		95BE731B182BFD6E00C8F970 /* WDImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDImage.h; sourceTree = "<group>"; };
+		95BE731D182BFD6E00C8F970 /* WDImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDImageData.h; sourceTree = "<group>"; };
+		95BE731F182BFD6E00C8F970 /* WDInspectableProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDInspectableProperties.h; sourceTree = "<group>"; };
+		95BE7320182BFD6E00C8F970 /* WDInspectableProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDInspectableProperties.m; sourceTree = "<group>"; };
+		95BE7321182BFD6E00C8F970 /* WDLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDLayer.h; sourceTree = "<group>"; };
+		95BE7323182BFD6E00C8F970 /* WDPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDPath.h; sourceTree = "<group>"; };
+		95BE7324182BFD6E00C8F970 /* WDPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDPath.m; sourceTree = "<group>"; };
+		95BE7325182BFD6E00C8F970 /* WDPathfinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDPathfinder.h; sourceTree = "<group>"; };
+		95BE7326182BFD6E00C8F970 /* WDPathfinder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WDPathfinder.mm; sourceTree = "<group>"; };
+		95BE7327182BFD6E00C8F970 /* WDPathPainter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDPathPainter.h; sourceTree = "<group>"; };
+		95BE7328182BFD6E00C8F970 /* WDPickResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDPickResult.h; sourceTree = "<group>"; };
+		95BE7329182BFD6E00C8F970 /* WDPickResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDPickResult.m; sourceTree = "<group>"; };
+		95BE732A182BFD6E00C8F970 /* WDRulerUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDRulerUnit.h; sourceTree = "<group>"; };
+		95BE732C182BFD6E00C8F970 /* WDShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDShadow.h; sourceTree = "<group>"; };
+		95BE732D182BFD6E00C8F970 /* WDShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDShadow.m; sourceTree = "<group>"; };
+		95BE732E182BFD6E00C8F970 /* WDStrokeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDStrokeStyle.h; sourceTree = "<group>"; };
+		95BE732F182BFD6E00C8F970 /* WDStrokeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDStrokeStyle.m; sourceTree = "<group>"; };
+		95BE7330182BFD6E00C8F970 /* WDStylable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDStylable.h; sourceTree = "<group>"; };
+		95BE7331182BFD6E00C8F970 /* WDStylable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDStylable.m; sourceTree = "<group>"; };
+		95BE7332182BFD6E00C8F970 /* WDText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDText.h; sourceTree = "<group>"; };
+		95BE7334182BFD6E00C8F970 /* WDTextPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDTextPath.h; sourceTree = "<group>"; };
+		95BE7336182BFD6E00C8F970 /* WDTextRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDTextRenderer.h; sourceTree = "<group>"; };
+		95BE7337182BFD6E00C8F970 /* WDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDXMLElement.h; sourceTree = "<group>"; };
+		95BE7370182BFD6E00C8F970 /* WDGLUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDGLUtilities.h; sourceTree = "<group>"; };
+		95BE7371182BFD6E00C8F970 /* WDGLUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDGLUtilities.m; sourceTree = "<group>"; };
+		95BE7372182BFD6E00C8F970 /* WDUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDUtilities.h; sourceTree = "<group>"; };
+		95BE7373182BFD6E00C8F970 /* WDUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDUtilities.m; sourceTree = "<group>"; };
+		95BE74C6182C005900C8F970 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		95BE74C8182C006200C8F970 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		95BE74CA182C006800C8F970 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		95BE74CC182C006D00C8F970 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		95BE74CE182C007200C8F970 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		95BE74D0182C007C00C8F970 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		95BE74D2182C008300C8F970 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		95BE74D4182C008800C8F970 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		95BE74D6182C00BA00C8F970 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95BE71C5182BF94400C8F970 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BE74D7182C00BA00C8F970 /* libz.dylib in Frameworks */,
+				95BE74CD182C006D00C8F970 /* QuartzCore.framework in Frameworks */,
+				95BE71CE182BF94400C8F970 /* CoreGraphics.framework in Frameworks */,
+				95BE71D0182BF94400C8F970 /* UIKit.framework in Frameworks */,
+				95BE71CC182BF94400C8F970 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95BE71E9182BF94400C8F970 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BE71EE182BF94400C8F970 /* XCTest.framework in Frameworks */,
+				95BE71F0182BF94400C8F970 /* UIKit.framework in Frameworks */,
+				95BE71EF182BF94400C8F970 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95BE71BF182BF94400C8F970 = {
+			isa = PBXGroup;
+			children = (
+				95BE71D1182BF94400C8F970 /* InkpadModel */,
+				95BE71F3182BF94400C8F970 /* InkpadModelTests */,
+				95BE71CA182BF94400C8F970 /* Frameworks */,
+				95BE71C9182BF94400C8F970 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95BE71C9182BF94400C8F970 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95BE71C8182BF94400C8F970 /* InkpadModel.app */,
+				95BE71EC182BF94400C8F970 /* InkpadModelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95BE71CA182BF94400C8F970 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95BE74D6182C00BA00C8F970 /* libz.dylib */,
+				95BE74D4182C008800C8F970 /* Social.framework */,
+				95BE74D2182C008300C8F970 /* Twitter.framework */,
+				95BE74D0182C007C00C8F970 /* MobileCoreServices.framework */,
+				95BE74CE182C007200C8F970 /* Security.framework */,
+				95BE74CC182C006D00C8F970 /* QuartzCore.framework */,
+				95BE74CA182C006800C8F970 /* OpenGLES.framework */,
+				95BE74C8182C006200C8F970 /* MessageUI.framework */,
+				95BE74C6182C005900C8F970 /* CoreText.framework */,
+				95BE71CB182BF94400C8F970 /* Foundation.framework */,
+				95BE71CD182BF94400C8F970 /* CoreGraphics.framework */,
+				95BE71CF182BF94400C8F970 /* UIKit.framework */,
+				95BE71ED182BF94400C8F970 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95BE71D1182BF94400C8F970 /* InkpadModel */ = {
+			isa = PBXGroup;
+			children = (
+				95BE72A4182BFD6E00C8F970 /* Inkpad-Core */,
+				95BE71DA182BF94400C8F970 /* MTAppDelegate.h */,
+				95BE71DB182BF94400C8F970 /* MTAppDelegate.m */,
+				95BE71DD182BF94400C8F970 /* Main_iPhone.storyboard */,
+				95BE71E0182BF94400C8F970 /* Main_iPad.storyboard */,
+				95BE71E3182BF94400C8F970 /* MTViewController.h */,
+				95BE71E4182BF94400C8F970 /* MTViewController.m */,
+				95BE72A0182BFC0300C8F970 /* MTSubtractView.h */,
+				95BE72A1182BFC0300C8F970 /* MTSubtractView.m */,
+				95BE71E6182BF94400C8F970 /* Images.xcassets */,
+				95BE71D2182BF94400C8F970 /* Supporting Files */,
+			);
+			path = InkpadModel;
+			sourceTree = "<group>";
+		};
+		95BE71D2182BF94400C8F970 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95BE71D3182BF94400C8F970 /* InkpadModel-Info.plist */,
+				95BE71D4182BF94400C8F970 /* InfoPlist.strings */,
+				95BE71D7182BF94400C8F970 /* main.m */,
+				95BE71D9182BF94400C8F970 /* InkpadModel-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95BE71F3182BF94400C8F970 /* InkpadModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				95BE71F9182BF94400C8F970 /* InkpadModelTests.m */,
+				95BE71F4182BF94400C8F970 /* Supporting Files */,
+			);
+			path = InkpadModelTests;
+			sourceTree = "<group>";
+		};
+		95BE71F4182BF94400C8F970 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95BE71F5182BF94400C8F970 /* InkpadModelTests-Info.plist */,
+				95BE71F6182BF94400C8F970 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95BE72A4182BFD6E00C8F970 /* Inkpad-Core */ = {
+			isa = PBXGroup;
+			children = (
+				95BE72B9182BFD6E00C8F970 /* CurveFit */,
+				95BE72EF182BFD6E00C8F970 /* livarot */,
+				95BE72FF182BFD6E00C8F970 /* Model */,
+				95BE736F182BFD6E00C8F970 /* Utilities */,
+			);
+			path = "Inkpad-Core";
+			sourceTree = "<group>";
+		};
+		95BE72B9182BFD6E00C8F970 /* CurveFit */ = {
+			isa = PBXGroup;
+			children = (
+				95BE72BA182BFD6E00C8F970 /* bezier-utils.cpp */,
+				95BE72BB182BFD6E00C8F970 /* bezier-utils.h */,
+				95BE72BC182BFD6E00C8F970 /* coord.h */,
+				95BE72BD182BFD6E00C8F970 /* isnan.h */,
+				95BE72BE182BFD6E00C8F970 /* macros.h */,
+				95BE72BF182BFD6E00C8F970 /* math-utils.h */,
+				95BE72C0182BFD6E00C8F970 /* matrix.cpp */,
+				95BE72C1182BFD6E00C8F970 /* matrix.h */,
+				95BE72C2182BFD6E00C8F970 /* point.cpp */,
+				95BE72C3182BFD6E00C8F970 /* point.h */,
+				95BE72C4182BFD6E00C8F970 /* rotate.cpp */,
+				95BE72C5182BFD6E00C8F970 /* rotate.h */,
+				95BE72C6182BFD6E00C8F970 /* scale.h */,
+				95BE72C7182BFD6E00C8F970 /* transforms.cpp */,
+				95BE72C8182BFD6E00C8F970 /* transforms.h */,
+				95BE72C9182BFD6E00C8F970 /* translate.h */,
+			);
+			path = CurveFit;
+			sourceTree = "<group>";
+		};
+		95BE72EF182BFD6E00C8F970 /* livarot */ = {
+			isa = PBXGroup;
+			children = (
+				95BE72F0182BFD6E00C8F970 /* AVL.cpp */,
+				95BE72F1182BFD6E00C8F970 /* AVL.h */,
+				95BE72F2182BFD6E00C8F970 /* DblLinked.cpp */,
+				95BE72F3182BFD6E00C8F970 /* DblLinked.h */,
+				95BE72F4182BFD6E00C8F970 /* LivarotDefs.h */,
+				95BE72F5182BFD6E00C8F970 /* MyMath.h */,
+				95BE72F6182BFD6E00C8F970 /* Path.cpp */,
+				95BE72F7182BFD6E00C8F970 /* Path.h */,
+				95BE72F8182BFD6E00C8F970 /* PathConversion.cpp */,
+				95BE72F9182BFD6E00C8F970 /* Shape.cpp */,
+				95BE72FA182BFD6E00C8F970 /* Shape.h */,
+				95BE72FB182BFD6E00C8F970 /* ShapeMisc.cpp */,
+				95BE72FC182BFD6E00C8F970 /* ShapeSweep.cpp */,
+				95BE72FD182BFD6E00C8F970 /* ShapeSweepUtils.cpp */,
+				95BE72FE182BFD6E00C8F970 /* ShapeUtils.h */,
+			);
+			path = livarot;
+			sourceTree = "<group>";
+		};
+		95BE72FF182BFD6E00C8F970 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95BE7300182BFD6E00C8F970 /* WDAbstractPath.h */,
+				95BE7301182BFD6E00C8F970 /* WDAbstractPath.m */,
+				95BE7302182BFD6E00C8F970 /* WDArrowhead.h */,
+				95BE7304182BFD6E00C8F970 /* WDBezierNode.h */,
+				95BE7305182BFD6E00C8F970 /* WDBezierNode.m */,
+				95BE7306182BFD6E00C8F970 /* WDBezierSegment.h */,
+				95BE7307182BFD6E00C8F970 /* WDBezierSegment.m */,
+				95BE7308182BFD6E00C8F970 /* WDColor.h */,
+				95BE7309182BFD6E00C8F970 /* WDColor.m */,
+				95BE730A182BFD6E00C8F970 /* WDCompoundPath.h */,
+				95BE730B182BFD6E00C8F970 /* WDCompoundPath.m */,
+				95BE730C182BFD6E00C8F970 /* WDCurveFit.h */,
+				95BE730D182BFD6E00C8F970 /* WDCurveFit.mm */,
+				95BE730E182BFD6E00C8F970 /* WDDocumentProtocol.h */,
+				95BE730F182BFD6E00C8F970 /* WDDrawing.h */,
+				95BE7311182BFD6E00C8F970 /* WDElement.h */,
+				95BE7312182BFD6E00C8F970 /* WDElement.m */,
+				95BE7313182BFD6E00C8F970 /* WDFillTransform.h */,
+				95BE7314182BFD6E00C8F970 /* WDFillTransform.m */,
+				95BE7315182BFD6E00C8F970 /* WDGradient.h */,
+				95BE7316182BFD6E00C8F970 /* WDGradient.m */,
+				95BE7317182BFD6E00C8F970 /* WDGradientStop.h */,
+				95BE7318182BFD6E00C8F970 /* WDGradientStop.m */,
+				95BE7319182BFD6E00C8F970 /* WDGroup.h */,
+				95BE731A182BFD6E00C8F970 /* WDGroup.m */,
+				95BE731B182BFD6E00C8F970 /* WDImage.h */,
+				95BE731D182BFD6E00C8F970 /* WDImageData.h */,
+				95BE731F182BFD6E00C8F970 /* WDInspectableProperties.h */,
+				95BE7320182BFD6E00C8F970 /* WDInspectableProperties.m */,
+				95BE7321182BFD6E00C8F970 /* WDLayer.h */,
+				95BE7323182BFD6E00C8F970 /* WDPath.h */,
+				95BE7324182BFD6E00C8F970 /* WDPath.m */,
+				95BE7325182BFD6E00C8F970 /* WDPathfinder.h */,
+				95BE7326182BFD6E00C8F970 /* WDPathfinder.mm */,
+				95BE7327182BFD6E00C8F970 /* WDPathPainter.h */,
+				95BE7328182BFD6E00C8F970 /* WDPickResult.h */,
+				95BE7329182BFD6E00C8F970 /* WDPickResult.m */,
+				95BE732A182BFD6E00C8F970 /* WDRulerUnit.h */,
+				95BE732C182BFD6E00C8F970 /* WDShadow.h */,
+				95BE732D182BFD6E00C8F970 /* WDShadow.m */,
+				95BE732E182BFD6E00C8F970 /* WDStrokeStyle.h */,
+				95BE732F182BFD6E00C8F970 /* WDStrokeStyle.m */,
+				95BE7330182BFD6E00C8F970 /* WDStylable.h */,
+				95BE7331182BFD6E00C8F970 /* WDStylable.m */,
+				95BE7332182BFD6E00C8F970 /* WDText.h */,
+				95BE7334182BFD6E00C8F970 /* WDTextPath.h */,
+				95BE7336182BFD6E00C8F970 /* WDTextRenderer.h */,
+				95BE7337182BFD6E00C8F970 /* WDXMLElement.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95BE736F182BFD6E00C8F970 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				95BE7370182BFD6E00C8F970 /* WDGLUtilities.h */,
+				95BE7371182BFD6E00C8F970 /* WDGLUtilities.m */,
+				95BE7372182BFD6E00C8F970 /* WDUtilities.h */,
+				95BE7373182BFD6E00C8F970 /* WDUtilities.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95BE71C7182BF94400C8F970 /* InkpadModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95BE71FD182BF94400C8F970 /* Build configuration list for PBXNativeTarget "InkpadModel" */;
+			buildPhases = (
+				95BE71C4182BF94400C8F970 /* Sources */,
+				95BE71C5182BF94400C8F970 /* Frameworks */,
+				95BE71C6182BF94400C8F970 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InkpadModel;
+			productName = InkpadModel;
+			productReference = 95BE71C8182BF94400C8F970 /* InkpadModel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95BE71EB182BF94400C8F970 /* InkpadModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95BE7200182BF94400C8F970 /* Build configuration list for PBXNativeTarget "InkpadModelTests" */;
+			buildPhases = (
+				95BE71E8182BF94400C8F970 /* Sources */,
+				95BE71E9182BF94400C8F970 /* Frameworks */,
+				95BE71EA182BF94400C8F970 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95BE71F2182BF94400C8F970 /* PBXTargetDependency */,
+			);
+			name = InkpadModelTests;
+			productName = InkpadModelTests;
+			productReference = 95BE71EC182BF94400C8F970 /* InkpadModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95BE71C0182BF94400C8F970 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MT;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = MacTeo;
+				TargetAttributes = {
+					95BE71EB182BF94400C8F970 = {
+						TestTargetID = 95BE71C7182BF94400C8F970;
+					};
+				};
+			};
+			buildConfigurationList = 95BE71C3182BF94400C8F970 /* Build configuration list for PBXProject "InkpadModel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95BE71BF182BF94400C8F970;
+			productRefGroup = 95BE71C9182BF94400C8F970 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95BE71C7182BF94400C8F970 /* InkpadModel */,
+				95BE71EB182BF94400C8F970 /* InkpadModelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95BE71C6182BF94400C8F970 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BE71E2182BF94400C8F970 /* Main_iPad.storyboard in Resources */,
+				95BE71E7182BF94400C8F970 /* Images.xcassets in Resources */,
+				95BE71DF182BF94400C8F970 /* Main_iPhone.storyboard in Resources */,
+				95BE71D6182BF94400C8F970 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95BE71EA182BF94400C8F970 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BE71F8182BF94400C8F970 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95BE71C4182BF94400C8F970 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BE74E4182C067E00C8F970 /* WDColor.m in Sources */,
+				95BE73B6182BFD6E00C8F970 /* WDFillTransform.m in Sources */,
+				95BE72A2182BFC0300C8F970 /* MTSubtractView.m in Sources */,
+				95BE73AA182BFD6E00C8F970 /* ShapeMisc.cpp in Sources */,
+				95BE71D8182BF94400C8F970 /* main.m in Sources */,
+				95BE73A7182BFD6E00C8F970 /* Path.cpp in Sources */,
+				95BE71E5182BF94400C8F970 /* MTViewController.m in Sources */,
+				95BE73B3182BFD6E00C8F970 /* WDCurveFit.mm in Sources */,
+				95BE73AF182BFD6E00C8F970 /* WDBezierNode.m in Sources */,
+				95BE737F182BFD6E00C8F970 /* point.cpp in Sources */,
+				95BE7381182BFD6E00C8F970 /* transforms.cpp in Sources */,
+				95BE73AC182BFD6E00C8F970 /* ShapeSweepUtils.cpp in Sources */,
+				95BE73A5182BFD6E00C8F970 /* AVL.cpp in Sources */,
+				95BE74E5182C068800C8F970 /* WDGradient.m in Sources */,
+				95BE73BF182BFD6E00C8F970 /* WDPathfinder.mm in Sources */,
+				95BE73BE182BFD6E00C8F970 /* WDPath.m in Sources */,
+				95BE73C2182BFD6E00C8F970 /* WDShadow.m in Sources */,
+				95BE737E182BFD6E00C8F970 /* matrix.cpp in Sources */,
+				95BE74E2182C067000C8F970 /* WDStylable.m in Sources */,
+				95BE73B5182BFD6E00C8F970 /* WDElement.m in Sources */,
+				95BE74E1182C060800C8F970 /* WDPickResult.m in Sources */,
+				95BE737D182BFD6E00C8F970 /* bezier-utils.cpp in Sources */,
+				95BE7380182BFD6E00C8F970 /* rotate.cpp in Sources */,
+				95BE74E6182C069500C8F970 /* WDGradientStop.m in Sources */,
+				95BE73A9182BFD6E00C8F970 /* Shape.cpp in Sources */,
+				95BE74E8182C09AA00C8F970 /* WDGLUtilities.m in Sources */,
+				95BE74E7182C08A300C8F970 /* PathConversion.cpp in Sources */,
+				95BE71DC182BF94400C8F970 /* MTAppDelegate.m in Sources */,
+				95BE73AB182BFD6E00C8F970 /* ShapeSweep.cpp in Sources */,
+				95BE73B2182BFD6E00C8F970 /* WDCompoundPath.m in Sources */,
+				95BE73E3182BFD6E00C8F970 /* WDUtilities.m in Sources */,
+				95BE73AD182BFD6E00C8F970 /* WDAbstractPath.m in Sources */,
+				95BE73B9182BFD6E00C8F970 /* WDGroup.m in Sources */,
+				95BE73B0182BFD6E00C8F970 /* WDBezierSegment.m in Sources */,
+				95BE73BC182BFD6E00C8F970 /* WDInspectableProperties.m in Sources */,
+				95BE74E3182C067400C8F970 /* WDStrokeStyle.m in Sources */,
+				95BE73A6182BFD6E00C8F970 /* DblLinked.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95BE71E8182BF94400C8F970 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BE71FA182BF94400C8F970 /* InkpadModelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95BE71F2182BF94400C8F970 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95BE71C7182BF94400C8F970 /* InkpadModel */;
+			targetProxy = 95BE71F1182BF94400C8F970 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95BE71D4182BF94400C8F970 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95BE71D5182BF94400C8F970 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		95BE71DD182BF94400C8F970 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95BE71DE182BF94400C8F970 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		95BE71E0182BF94400C8F970 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95BE71E1182BF94400C8F970 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		95BE71F6182BF94400C8F970 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95BE71F7182BF94400C8F970 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95BE71FB182BF94400C8F970 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95BE71FC182BF94400C8F970 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95BE71FE182BF94400C8F970 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InkpadModel/InkpadModel-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INFOPLIST_FILE = "InkpadModel/InkpadModel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		95BE71FF182BF94400C8F970 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InkpadModel/InkpadModel-Prefix.pch";
+				INFOPLIST_FILE = "InkpadModel/InkpadModel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		95BE7201182BF94400C8F970 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InkpadModel.app/InkpadModel";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InkpadModel/InkpadModel-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "InkpadModelTests/InkpadModelTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		95BE7202182BF94400C8F970 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InkpadModel.app/InkpadModel";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InkpadModel/InkpadModel-Prefix.pch";
+				INFOPLIST_FILE = "InkpadModelTests/InkpadModelTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95BE71C3182BF94400C8F970 /* Build configuration list for PBXProject "InkpadModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95BE71FB182BF94400C8F970 /* Debug */,
+				95BE71FC182BF94400C8F970 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95BE71FD182BF94400C8F970 /* Build configuration list for PBXNativeTarget "InkpadModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95BE71FE182BF94400C8F970 /* Debug */,
+				95BE71FF182BF94400C8F970 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95BE7200182BF94400C8F970 /* Build configuration list for PBXNativeTarget "InkpadModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95BE7201182BF94400C8F970 /* Debug */,
+				95BE7202182BF94400C8F970 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95BE71C0182BF94400C8F970 /* Project object */;
+}
